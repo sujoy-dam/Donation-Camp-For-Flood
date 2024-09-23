@@ -31,3 +31,27 @@ document.getElementById('history-btn').addEventListener('click', function(){
     donationContainer.classList.add('hidden')
     historyContainer.classList.remove('hidden')
 })
+
+// blog button
+document.getElementById('blog-btn').addEventListener('click', function(){
+    const homeBtn = document.getElementById('home-btn')
+    const blogBtn = document.getElementById('blog-btn')
+    const donationSection = document.getElementById('donation-section');
+    const accordianSection = document.getElementById('accordian-section')
+    blogBtn.classList.add('hidden')
+    homeBtn.classList.remove('hidden')
+    donationSection.classList.add('hidden')
+    accordianSection.classList.remove('hidden')
+    // homeBtn.classList.add('hidden')
+})
+
+document.getElementById('home-btn').addEventListener('click', function(){
+    const homeBtn = document.getElementById('home-btn');
+    const blogBtn = document.getElementById('blog-btn');
+    const donationSection = document.getElementById('donation-section');
+    const accordianSection = document.getElementById('accordian-section');
+    donationSection.classList.remove('hidden')
+    accordianSection.classList.add('hidden')
+    homeBtn.classList.add('hidden')
+    blogBtn.classList.remove('hidden')
+})
