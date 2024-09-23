@@ -1,6 +1,3 @@
-console.log('connet')
-// console.log(typeof feniAmount, feniAmount)
-
 document.getElementById('feni-donate-btn').addEventListener('click', function(){
     const totalDonation = getInnerTextValueById('total-donation')
     const feniAmount = getInnerTextValueById('feni-amount');
