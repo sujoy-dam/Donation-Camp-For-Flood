@@ -5,10 +5,21 @@ document.getElementById('noakhali-donate-btn').addEventListener('click', functio
     const totalDonation = getInnerTextValueById('total-donation')
     const noakhaliAmount = getInnerTextValueById('noakhali-amount');
     const noakhaliDonation = getInputValueById('noakhali-donation')
+    const heading = document.querySelector('.noakhali-heading').innerText;
+    console.log(heading)
     console.log(noakhaliDonation)
     const totalAmount = totalDonation + noakhaliDonation;
     console.log(totalAmount)
     document.getElementById('total-donation').innerText = totalAmount;
     const restNoakhaliAmount = noakhaliAmount - noakhaliDonation;
-    document.getElementById('noakhali-amount').innerText = restNoakhaliAmount
+    document.getElementById('noakhali-amount').innerText = restNoakhaliAmount;
+
+    const historyContainer = document.getElementById('history-container')
+    const div = document.createElement('div');
+    div.className = 'border-2 border-blue-500 p-5 rounded-lg'
+    div.innerHTML = `
+    <p class="text-lg font-bold">${noakhaliDonation} Taka is ${heading}.</p>
+    <p>Data: ${new Date().toLocaleDateString()}</p>
+    `
+    historyContainer.appendChild(div)
 })

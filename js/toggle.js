@@ -12,8 +12,9 @@ document.getElementById('donation-btn').addEventListener('click', function(){
     historyBtn.classList.remove('bg-[#B4F461]')
     historyBtn.classList.add('border-2')
 
+    // historyContainer.classList.add('hidden')
+    donationContainer.classList.remove('hidden');
     historyContainer.classList.add('hidden')
-    donationContainer.classList.remove('hidden')
     
 })
 document.getElementById('history-btn').addEventListener('click', function(){
@@ -28,4 +29,5 @@ document.getElementById('history-btn').addEventListener('click', function(){
     donationBtn.classList.remove('bg-[#B4F461]');
     donationBtn.classList.add('border-2');
     donationContainer.classList.add('hidden')
+    historyContainer.classList.remove('hidden')
 })

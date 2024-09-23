@@ -12,4 +12,15 @@ document.getElementById('quota-movement-donate-btn').addEventListener('click', f
     document.getElementById('total-donation').innerText = totalAmount;
     const restQuotaMovementAmount = quotaMovementAmount - quotaMovementDonation;
     document.getElementById('quota-movement-amount').innerText = restQuotaMovementAmount;
+
+
+    const heading = document.querySelector('.quota-movement-heading').innerText;
+    const historyContainer = document.getElementById('history-container')
+    const div = document.createElement('div');
+    div.className = 'border-2 border-blue-500 p-5 rounded-lg'
+    div.innerHTML = `
+    <p class="text-lg font-bold">${quotaMovementDonation} Taka is ${heading}.</p>
+    <p>Data:${new Date().toLocaleDateString()}</p>
+    `
+    historyContainer.appendChild(div);
 })
