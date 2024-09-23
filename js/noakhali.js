@@ -1,15 +1,19 @@
-console.log('connect noa')
+// console.log('connect noa')
 // console.log(typeof noakhaliAmount, noakhaliAmount)
 
-document.getElementById('noakhali-donate-btn').addEventListener('click', function(){
+document.getElementById('noakhali-donate-btn').addEventListener('click', function () {
     const totalDonation = getInnerTextValueById('total-donation')
     const noakhaliAmount = getInnerTextValueById('noakhali-amount');
     const noakhaliDonation = getInputValueById('noakhali-donation')
     const heading = document.querySelector('.noakhali-heading').innerText;
-    console.log(heading)
-    console.log(noakhaliDonation)
+    // console.log(heading)
+    // console.log(noakhaliDonation)
+    if (noakhaliDonation <= 0 || isNaN(noakhaliDonation) || noakhaliDonation > noakhaliAmount) {
+        alert('Invalid Input');
+        return;
+    }
     const totalAmount = totalDonation + noakhaliDonation;
-    console.log(totalAmount)
+    // console.log(totalAmount)
     document.getElementById('total-donation').innerText = totalAmount;
     const restNoakhaliAmount = noakhaliAmount - noakhaliDonation;
     document.getElementById('noakhali-amount').innerText = restNoakhaliAmount;

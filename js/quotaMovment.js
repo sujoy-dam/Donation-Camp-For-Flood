@@ -1,14 +1,18 @@
 
 document.getElementById('quota-movement-donate-btn').addEventListener('click', function(){
     const totalDonation = getInnerTextValueById('total-donation');
-    console.log(totalDonation)
+    // console.log(totalDonation)
     const quotaMovementAmount = getInnerTextValueById('quota-movement-amount');
-    console.log(quotaMovementAmount)
-    console.log('hi')
+    // console.log(quotaMovementAmount)
+    // console.log('hi')
     const quotaMovementDonation = getInputValueById('quota-movement-donation')
-    console.log(quotaMovementDonation)
+    // console.log(quotaMovementDonation)
+    if (quotaMovementDonation <= 0 || isNaN(quotaMovementDonation) || quotaMovementDonation > quotaMovementAmount) {
+        alert('Invalid Input');
+        return;
+    }
     const totalAmount = totalDonation + quotaMovementDonation;
-    console.log(totalAmount)
+    // console.log(totalAmount)
     document.getElementById('total-donation').innerText = totalAmount;
     const restQuotaMovementAmount = quotaMovementAmount - quotaMovementDonation;
     document.getElementById('quota-movement-amount').innerText = restQuotaMovementAmount;
