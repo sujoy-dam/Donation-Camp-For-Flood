@@ -10,6 +10,7 @@ document.getElementById('noakhali-donate-btn').addEventListener('click', functio
     // console.log(noakhaliDonation)
     if (noakhaliDonation <= 0 || isNaN(noakhaliDonation) || noakhaliDonation > noakhaliAmount) {
         alert('Invalid Input');
+        noakhaliDonation = ''
         return;
     }
     const totalAmount = totalDonation + noakhaliDonation;

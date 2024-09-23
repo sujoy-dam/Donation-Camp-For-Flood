@@ -39,34 +39,40 @@
     </header>
     <main class="mt-16">
         <section id="accordian-section" class="hidden container mx-auto">
-            <div class="space-y-4">
+            <div class="space-y-8">
                 <h1 class="text-5xl mb-16 font-bold">Important FAQ ?</h1>
                 <div class="collapse collapse-arrow bg-base-200">
                     <input type="radio" name="my-accordion-2" checked="checked" />
-                    <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>
+                    <div class="collapse-title text-3xl font-medium">What is the Document Object Model (DOM) ?</div>
                     <div class="collapse-content">
-                        <p>hello</p>
+                        <p class="lg:w-2/3">The Document Object Model (DOM) is a programming interface for web documents, allowing
+                            structured access and manipulation of HTML or XML elements using scripting languages like
+                            JavaScript.</p>
                     </div>
                 </div>
                 <div class="collapse collapse-arrow bg-base-200">
                     <input type="radio" name="my-accordion-2" />
-                    <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
+                    <div class="collapse-title text-3xl font-medium">How do you select an element from the DOM ?</div>
                     <div class="collapse-content">
-                        <p>hello</p>
+                        <p>
+                            To select an element from the DOM, you can use methods like getElementById, querySelector,
+                            or getElementsByClassName to access and manipulate specific elements.</p>
                     </div>
                 </div>
                 <div class="collapse collapse-arrow bg-base-200">
                     <input type="radio" name="my-accordion-2" />
-                    <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and why is it useful?</div>
+                    <div class="collapse-title text-3xl font-medium">What is event delegation in the context of the DOM,
+                        and why is it useful ?</div>
                     <div class="collapse-content">
-                        <p>hello</p>
+                        <p>Event delegation is a technique where a parent element handles events for its child elements. It improves performance by reducing event listeners and managing dynamic elements efficiently.</p>
                     </div>
                 </div>
                 <div class="collapse collapse-arrow bg-base-200">
                     <input type="radio" name="my-accordion-2" />
-                    <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles using the DOM?</div>
+                    <div class="collapse-title text-3xl font-medium">How do you manipulate an element's attributes and
+                        styles using the DOM ?</div>
                     <div class="collapse-content">
-                        <p>hello</p>
+                        <p>You manipulate an element's attributes using setAttribute, getAttribute, and directly change styles via the style property, e.g., element.style.color = "red".</p>
                     </div>
                 </div>
             </div>
@@ -74,92 +80,84 @@
         <section id="donation-section" class="container mx-auto">
             <div id="donation-container" class="space-y-5">
                 <!-- first picture  -->
-                <div class="p-5 border-2 border-dotted rounded-lg flex justify-between">
-                    <div class="w-[50%]">
-                        <img src="./assets/noakhali.png" alt="">
+                <div class="p-5 border-2 border-dotted rounded-lg flex gap-8">
+                    <div class="flex-1">
+                        <img class="w-full" src="./assets/noakhali.png" alt="">
                     </div>
-                    <div class="w-[50%] flex flex-col space-y-4">
+                    <div class=" flex flex-1 flex-col space-y-8">
                         <div class="flex rounded-xl w-1/4 items-center gap-2 p-4 bg-gray-200">
                             <img src="./assets/coin.png" alt="">
                             <p class="font-bold"><span id="noakhali-amount">2000</span> BDT</p>
                         </div>
 
-                        <h5 class="font-bold noakhali-heading text-lg">Donate for Flood at Noakhali, Bangladesh</h5>
-                        <p> The recent floods in Noakhali have caused significant damage to homes infrastructure. Your
+                        <h5 class="font-bold noakhali-heading text-2xl">Donate for Flood at Noakhali, Bangladesh</h5>
+                        <p class="font-semibold leading-10"> The recent floods in Noakhali have caused significant
+                            damage to homes infrastructure. Your
                             donation will help provide essential supplies and to those affected by this disaster. Every
                             contribution, big or small, makes difference. Please join us in supporting the relief
                             efforts
                             and making a positive impact on the lives of those in need.</p>
-                        <input id="noakhali-donation" type="text" placeholder="Write Donation Amount"
-                            class="border-2 text-xl p-4 rounded-lg">
-                        <button id="noakhali-donate-btn"
-                            class="bg-[#B4F461] py-4 text-lg font-bold rounded-lg">Donate
+                        <div>
+                            <input id="noakhali-donation" type="text" placeholder="Write Donation Amount"
+                                class="border-2 w-full mt-12 text-xl p-4 rounded-lg">
+                        </div>
+                        <button id="noakhali-donate-btn" class="bg-[#B4F461] py-4 text-lg font-bold rounded-lg">Donate
                             Now</button>
                         <!-- Modal -->
 
-                        <!-- Open the modal using ID.showModal() method -->
-                        <!-- <button class="btn" onclick="my_modal_1.showModal()">open modal</button> -->
-                        <dialog id="my_modal_1" class="modal">
-                            <div class="modal-box">
-                                <h1 class="text-6xl font-bold text-center">Congrates!</h1>
-                                <div class="mt-6">
-                                    <img class="text-center mx-auto w-12" src="./assets/coin.png" alt="">
-                                </div>
-                                <p class="text-lg py-4 text-center font-semibold">You Have Donated for Humankind</p>
-                                <h2 class="text-5xl font-bold text-center">Successfully</h2>
-                                <div class="modal-action ">
-                                    <form method="dialog" class="mx-auto">
-                                        <!-- if there is a button in form, it will close the modal -->
-                                        <button class="btn">Close Confirmation</button>
-                                    </form>
-                                </div>
-                            </div>
-                        </dialog>
+
+
                     </div>
                 </div>
                 <!-- second picture  -->
-                <div class="p-5 border-2 border-dotted rounded-lg flex justify-between">
-                    <div class="w-[50%]">
-                        <img src="./assets/feni.png" alt="">
+                <div class="p-5 border-2 border-dotted rounded-lg flex gap-8">
+                    <div class="flex-1">
+                        <img class="w-full" src="./assets/feni.png" alt="">
                     </div>
-                    <div class="w-[50%] flex flex-col space-y-4">
+                    <div class="flex flex-1 flex-col space-y-8">
                         <div class="flex rounded-xl w-1/4 items-center gap-2 p-4 bg-gray-200">
                             <img src="./assets/coin.png" alt="">
                             <p class="font-bold"><span id="feni-amount">2000</span> BDT</p>
                         </div>
 
-                        <h5 class="quota-movement-heading font-bold feni-heading text-lg">Donate for Flood Relif in
+                        <h5 class="font-bold feni-heading text-2xl">Donate for Flood Relif in
                             Feni, Bangladesh</h5>
-                        <p> The recent floods in Noakhali have caused significant damage to homes infrastructure. Your
+                        <p class="leading-10"> The recent floods in Noakhali have caused significant damage to homes
+                            infrastructure. Your
                             donation will help provide essential supplies and to those affected by this disaster. Every
                             contribution, big or small, makes difference. Please join us in supporting the relief
                             efforts
                             and making a positive impact on the lives of those in need.</p>
-                        <input id="feni-donation" type="text" placeholder="Write Donation Amount"
-                            class="border-2 text-xl p-4 rounded-lg">
+                        <div>
+                            <input id="feni-donation" type="text" placeholder="Write Donation Amount"
+                                class="border-2 text-xl w-full mt-12 p-4 rounded-lg">
+                        </div>
                         <button id="feni-donate-btn" class="bg-[#B4F461] py-4 text-lg font-bold rounded-lg">Donate
                             Now</button>
                     </div>
                 </div>
                 <!-- third picture  -->
-                <div class="p-5 border-2 border-dotted rounded-lg flex justify-between">
-                    <div class="w-[50%]">
-                        <img src="./assets/quota-protest.png" alt="">
+                <div class="p-5 border-2 border-dotted rounded-lg flex gap-8">
+                    <div class="flex-1">
+                        <img class="w-full" src="./assets/quota-protest.png" alt="">
                     </div>
-                    <div class="w-[50%] flex flex-col space-y-4">
+                    <div class="flex flex-1 flex-col space-y-8">
                         <div class="flex rounded-xl w-1/4 items-center gap-2 p-4 bg-gray-200">
                             <img src="./assets/coin.png" alt="">
                             <p class="font-bold"><span id="quota-movement-amount">2000</span> BDT</p>
                         </div>
 
-                        <h5 class="font-bold text-lg">Aid for Injured in the Quota Movement</h5>
-                        <p> The recent floods in Noakhali have caused significant damage to homes infrastructure. Your
+                        <h5 class="font-bold text-2xl quota-movement-heading">Aid for Injured in the Quota Movement</h5>
+                        <p class="leading-10"> The recent floods in Noakhali have caused significant damage to homes
+                            infrastructure. Your
                             donation will help provide essential supplies and to those affected by this disaster. Every
                             contribution, big or small, makes difference. Please join us in supporting the relief
                             efforts
                             and making a positive impact on the lives of those in need.</p>
-                        <input id="quota-movement-donation" type="text" placeholder="Write Donation Amount"
-                            class="border-2 text-xl p-4 rounded-lg">
+                        <div>
+                            <input id="quota-movement-donation" type="text" placeholder="Write Donation Amount"
+                                class="border-2 w-full mt-12 text-xl p-4 rounded-lg">
+                        </div>
                         <button id="quota-movement-donate-btn"
                             class="bg-[#B4F461] py-4 text-lg font-bold rounded-lg">Donate Now</button>
                     </div>
@@ -177,6 +175,7 @@
     <script src="./js/feni.js"></script>
     <script src="./js/quotaMovment.js"></script>
     <script src="./js/toggle.js"></script>
+    <script src="./js/modal.js"></script>
 
 </body>
 
