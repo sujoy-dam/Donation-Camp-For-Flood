@@ -3,3 +3,9 @@ function getInputValueById(id){
     const inputValueNumber = Number(inputValue);
     return inputValueNumber;
 }
+
+function getInnerTextValueById(id){
+    const innerTextValue = document.getElementById(id).innerText;
+    const innerTextValueNumber  = Number(innerTextValue);
+    return innerTextValueNumber;
+}
