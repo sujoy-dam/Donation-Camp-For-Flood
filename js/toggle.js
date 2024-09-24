@@ -1,5 +1,3 @@
-console.log('connet');
-// const donationBtn = document.getElementById
 document.getElementById('donation-btn').addEventListener('click', function(){
     const donationContainer = document.getElementById('donation-container')
     const historyContainer = document.getElementById('history-container');
@@ -8,11 +6,9 @@ document.getElementById('donation-btn').addEventListener('click', function(){
 
     donationBtn.classList.add('bg-[#B4F461]')
     donationBtn.classList.remove('border-2')
-    // historyBtn.classList.remove('hidden')
     historyBtn.classList.remove('bg-[#B4F461]')
     historyBtn.classList.add('border-2')
 
-    // historyContainer.classList.add('hidden')
     donationContainer.classList.remove('hidden');
     historyContainer.classList.add('hidden')
     
@@ -25,7 +21,6 @@ document.getElementById('history-btn').addEventListener('click', function(){
 
     historyBtn.classList.add('bg-[#B4F461]')
     historyBtn.classList.remove('border-2')
-    // historyContainer.classList.add()
     donationBtn.classList.remove('bg-[#B4F461]');
     donationBtn.classList.add('border-2');
     donationContainer.classList.add('hidden')
@@ -42,7 +37,6 @@ document.getElementById('blog-btn').addEventListener('click', function(){
     homeBtn.classList.remove('hidden')
     donationSection.classList.add('hidden')
     accordianSection.classList.remove('hidden')
-    // homeBtn.classList.add('hidden')
 })
 
 document.getElementById('home-btn').addEventListener('click', function(){
@@ -55,3 +49,18 @@ document.getElementById('home-btn').addEventListener('click', function(){
     homeBtn.classList.add('hidden')
     blogBtn.classList.remove('hidden')
 })
+
+// document.getElementById('donation-btn').addEventListener('click', function(){
+//     showSectionById('donation-section')
+// })
+// document.getElementById('history-btn').addEventListener('click', function(){
+//     showSectionById('history-container')
+// })
+// document.getElementById('blog-btn').addEventListener('click', function(){
+//     showSectionById('accordian-section')
+//     showSectionById('home-btn')
+// })
+// document.getElementById('home-btn').addEventListener('click', function(){
+//     showSectionById('donation-section')
+//     showSectionById('blog-btn')
+// })

@@ -13,18 +13,21 @@ document.getElementById('noakhali-donate-btn').addEventListener('click', functio
         return;
     }
     my_modal_1.showModal()
-    const totalAmount = totalDonation + noakhaliDonation;
-    // console.log(totalAmount)
-    document.getElementById('total-donation').innerText = totalAmount;
-    const restNoakhaliAmount = noakhaliAmount - noakhaliDonation;
-    document.getElementById('noakhali-amount').innerText = restNoakhaliAmount;
+    document.getElementById('btn').addEventListener('click', function () {
 
-    const historyContainer = document.getElementById('history-container')
-    const div = document.createElement('div');
-    div.className = 'border-2 border-blue-500 p-5 rounded-lg'
-    div.innerHTML = `
-    <p class="text-lg font-bold">${noakhaliDonation} Taka is ${heading}.</p>
-    <p>Data: ${new Date()}</p>
-    `
-    historyContainer.appendChild(div)
+        const totalAmount = totalDonation + noakhaliDonation;
+        // console.log(totalAmount)
+        document.getElementById('total-donation').innerText = totalAmount;
+        const restNoakhaliAmount = noakhaliAmount - noakhaliDonation;
+        document.getElementById('noakhali-amount').innerText = restNoakhaliAmount;
+
+        const historyContainer = document.getElementById('history-container')
+        const div = document.createElement('div');
+        div.className = 'border-2 border-blue-500 p-5 rounded-lg'
+        div.innerHTML = `
+        <p class="text-lg font-bold">${noakhaliDonation} Taka is ${heading}.</p>
+        <p>Data: ${new Date()}</p>
+        `
+        historyContainer.appendChild(div)
+    })
 })
