@@ -10,9 +10,9 @@ document.getElementById('noakhali-donate-btn').addEventListener('click', functio
     // console.log(noakhaliDonation)
     if (noakhaliDonation <= 0 || isNaN(noakhaliDonation) || noakhaliDonation > noakhaliAmount) {
         alert('Invalid Input');
-        noakhaliDonation = ''
         return;
     }
+    my_modal_1.showModal()
     const totalAmount = totalDonation + noakhaliDonation;
     // console.log(totalAmount)
     document.getElementById('total-donation').innerText = totalAmount;
@@ -24,7 +24,7 @@ document.getElementById('noakhali-donate-btn').addEventListener('click', functio
     div.className = 'border-2 border-blue-500 p-5 rounded-lg'
     div.innerHTML = `
     <p class="text-lg font-bold">${noakhaliDonation} Taka is ${heading}.</p>
-    <p>Data: ${new Date().toLocaleDateString()}</p>
+    <p>Data: ${new Date()}</p>
     `
     historyContainer.appendChild(div)
 })

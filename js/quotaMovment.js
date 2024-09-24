@@ -11,6 +11,7 @@ document.getElementById('quota-movement-donate-btn').addEventListener('click', f
         alert('Invalid Input');
         return;
     }
+    my_modal_1.showModal()
     const totalAmount = totalDonation + quotaMovementDonation;
     // console.log(totalAmount)
     document.getElementById('total-donation').innerText = totalAmount;

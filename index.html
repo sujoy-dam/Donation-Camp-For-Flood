@@ -45,7 +45,8 @@
                     <input type="radio" name="my-accordion-2" checked="checked" />
                     <div class="collapse-title text-3xl font-medium">What is the Document Object Model (DOM) ?</div>
                     <div class="collapse-content">
-                        <p class="lg:w-2/3">The Document Object Model (DOM) is a programming interface for web documents, allowing
+                        <p class="lg:w-2/3">The Document Object Model (DOM) is a programming interface for web
+                            documents, allowing
                             structured access and manipulation of HTML or XML elements using scripting languages like
                             JavaScript.</p>
                     </div>
@@ -64,7 +65,9 @@
                     <div class="collapse-title text-3xl font-medium">What is event delegation in the context of the DOM,
                         and why is it useful ?</div>
                     <div class="collapse-content">
-                        <p>Event delegation is a technique where a parent element handles events for its child elements. It improves performance by reducing event listeners and managing dynamic elements efficiently.</p>
+                        <p>Event delegation is a technique where a parent element handles events for its child elements.
+                            It improves performance by reducing event listeners and managing dynamic elements
+                            efficiently.</p>
                     </div>
                 </div>
                 <div class="collapse collapse-arrow bg-base-200">
@@ -72,7 +75,8 @@
                     <div class="collapse-title text-3xl font-medium">How do you manipulate an element's attributes and
                         styles using the DOM ?</div>
                     <div class="collapse-content">
-                        <p>You manipulate an element's attributes using setAttribute, getAttribute, and directly change styles via the style property, e.g., element.style.color = "red".</p>
+                        <p>You manipulate an element's attributes using setAttribute, getAttribute, and directly change
+                            styles via the style property, e.g., element.style.color = "red".</p>
                     </div>
                 </div>
             </div>
@@ -105,6 +109,25 @@
                             Now</button>
                         <!-- Modal -->
 
+
+                        <!-- Open the modal using ID.showModal() method -->
+                        <!-- <button class="btn" onclick="my_modal_1.showModal()">open modal</button> -->
+                        <dialog id="my_modal_1" class="modal">
+                            <div class="modal-box">
+                                <h1 class="text-5xl font-bold text-center">Congrates!</h1>
+                                <p class="py-4 text-center text-xl">You Have Donated for Humankind</p>
+                                <div>
+                                    <img class="mx-auto text-center w-12" src="./assets/coin.png" alt="">
+                                </div>
+                                <h2 class="text-3xl font-bold text-center">Successfully</h2>
+                                <div class="modal-action">
+                                    <form method="dialog" class="mx-auto">
+                                        <!-- if there is a button in form, it will close the modal -->
+                                        <button class="btn">Close confirmation</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </dialog>
 
 
                     </div>

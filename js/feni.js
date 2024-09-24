@@ -8,6 +8,7 @@ document.getElementById('feni-donate-btn').addEventListener('click', function(){
         return;
     }
     // console.log(feniDonation)
+    my_modal_1.showModal()
     const totalAmount = totalDonation + feniDonation;
     console.log(totalAmount)
     document.getElementById('total-donation').innerText = totalAmount;
