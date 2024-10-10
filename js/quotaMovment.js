@@ -14,10 +14,10 @@ document.getElementById('quota-movement-donate-btn').addEventListener('click', f
     my_modal_1.showModal();
     
     document.getElementById('btn').addEventListener('click', function(){
-        const totalAmount = totalDonation + quotaMovementDonation;
+        const totalAmount = totalDonation - quotaMovementDonation;
         // console.log(totalAmount)
         document.getElementById('total-donation').innerText = totalAmount;
-        const restQuotaMovementAmount = quotaMovementAmount - quotaMovementDonation;
+        const restQuotaMovementAmount = quotaMovementAmount + quotaMovementDonation;
         document.getElementById('quota-movement-amount').innerText = restQuotaMovementAmount;
     
     

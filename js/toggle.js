@@ -49,18 +49,3 @@ document.getElementById('home-btn').addEventListener('click', function(){
     homeBtn.classList.add('hidden')
     blogBtn.classList.remove('hidden')
 })
-
-// document.getElementById('donation-btn').addEventListener('click', function(){
-//     showSectionById('donation-section')
-// })
-// document.getElementById('history-btn').addEventListener('click', function(){
-//     showSectionById('history-container')
-// })
-// document.getElementById('blog-btn').addEventListener('click', function(){
-//     showSectionById('accordian-section')
-//     showSectionById('home-btn')
-// })
-// document.getElementById('home-btn').addEventListener('click', function(){
-//     showSectionById('donation-section')
-//     showSectionById('blog-btn')
-// })

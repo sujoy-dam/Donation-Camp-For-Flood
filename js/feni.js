@@ -10,10 +10,10 @@ document.getElementById('feni-donate-btn').addEventListener('click', function(){
     // console.log(feniDonation)
     my_modal_1.showModal()
     document.getElementById('btn').addEventListener('click', function(){
-        const totalAmount = totalDonation + feniDonation;
+        const totalAmount = totalDonation - feniDonation;
         console.log(totalAmount)
         document.getElementById('total-donation').innerText = totalAmount;
-        const restFeniAmount = feniAmount - feniDonation;
+        const restFeniAmount = feniAmount + feniDonation;
         document.getElementById('feni-amount').innerText = restFeniAmount;
     
         const heading = document.querySelector('.feni-heading').innerText;
